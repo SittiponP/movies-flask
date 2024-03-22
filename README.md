@@ -1,1 +1,3 @@
-# movies-flask
+# Book Movies Ticket
+
+#### Description: My project is Book Movies Ticket but you can book any ticket you want in this project is include template folder that contain all of the html pages index.html is the first page you'll see when you login and login page, register page movie.html page etc. and movies.db is database of this project it inclued 3 table users contain the information of users, movies contain all of the movie, and booking contain all of the ticket that have been bought, helper.py it include the login_required function, app.py in this file it include all of the main function of this project whether is login function, register function, showing movies function, adding movie function

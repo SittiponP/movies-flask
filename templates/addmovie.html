@@ -1,0 +1,27 @@
+{%extends "manager.html"%}
+{%block main%}
+<div class="header text-center fs-1">
+    <div class="text-center fs-1 fw-bold mt-5 mb-3">
+        Add Movie
+    </div>
+
+    <form action="/addmovie" method="post">
+        <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" name="moviename"
+                placeholder="Movie Name" type="text">
+        </div>
+
+        <div class="mb-3">
+            <input type="text" autocomplete="off" class="form-control mx-auto w-auto" name="moviegenre"
+                placeholder="Genre">
+        </div>
+
+        <div class="mb-3">
+            <input type="text" autocomplete="off" class="form-control mx-auto w-auto" name="movieimg"
+                placeholder="Image">
+        </div>
+
+        <button class="btn btn-dark" type="submit">Add Movie</button>
+    </form>
+</div>
+{%endblock%}

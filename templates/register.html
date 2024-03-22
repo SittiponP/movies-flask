@@ -1,0 +1,43 @@
+{%extends "layout.html"%}
+
+{%block main%}
+<div class="header text-center fs-1">
+    <div class="text-center fs-1 fw-bold mt-5 mb-3">
+        Register
+    </div>
+
+    <form action="/register" method="post">
+        <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="username" name="username"
+                placeholder="Username" type="text">
+        </div>
+
+        <div class="mb-3">
+            <input type="text" autocomplete="off" class="form-control mx-auto w-auto" id="fisrt_name" name="name"
+                placeholder="Name">
+        </div>
+
+        <div class="mb-3">
+            <input type="text" autocomplete="off" class="form-control mx-auto w-auto" id="last_name" name="last_name"
+                placeholder="Last Name">
+        </div>
+
+        <div class="mb-3">
+            <input type="text" autocomplete="off" class="form-control mx-auto w-auto" id="email" name="email"
+                placeholder="Email">
+        </div>
+
+        <div class="mb-3">
+            <input class="form-control mx-auto w-auto" id="password" name="password" placeholder="Password"
+                type="password">
+        </div>
+
+        <div class="mb-3">
+            <input class="form-control mx-auto w-auto" id="confirmation" name="confirmation"
+                placeholder="Confirm Password" type="password">
+        </div>
+
+        <button class="btn btn-dark" type="submit">Register</button>
+    </form>
+</div>
+{%endblock%}

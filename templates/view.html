@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{%block main%}
+<table class="table table-striped mt-5">
+    <thead>
+        <th>Book ID</th>
+        <th>Movie Title</th>
+        <th>Name</th>
+        <th>Quantity</th>
+        <th>Price</th>
+        <th>Date</th>
+    </thead>
+    <tbody>
+        {% for booking in bookings %}
+        <tr>
+            <td>{{booking.bookID}}</td>
+            <td>{{movieTitle}}</td>
+            <td>{{name}}</td>
+            <td>{{booking.quantity}}</td>
+            <td>{{booking.price}}</td>
+            <td>{{booking.date}}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{%endblock%}

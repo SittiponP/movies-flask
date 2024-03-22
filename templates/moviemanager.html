@@ -1,0 +1,24 @@
+{%extends "layout.html"%}
+{%block main%}
+<div class="header text-center fs-1 fw-5 mt-3">
+    Now Showing
+</div>
+<form action="/buy" method="post">
+    <div class="row row-cols-3 justify-content-around text-center">
+
+        {%for movie in movies%}
+        <div class="col mt-5">
+            <img src="{{movie.movie_img}}" class="thumbnail" name="img" width="250rem" alt="">
+            <h5 class="title">{{movie.movie_name}}</h5>
+            <p class="text">{{movie.movie_genre}}</p>
+            <button class="btn btn-dark">Buy</button>
+        </div>
+        {%endfor%}
+
+    </div>
+</form>
+<form action="/addmovie" method="get" class="mt-5">
+    <button class="btn btn-dark mt-5">Add Movie</button>
+</form>
+</div>
+{%endblock%}

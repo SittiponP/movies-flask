@@ -1,0 +1,16 @@
+{%extends "layout.html"%}
+{%block main%}
+<form action="/confirm" method="post">
+    <div class="row align-items-center mt-5">
+        <div class="col">
+            <img src="{{img}}" style="width: 25rem;" alt="">
+            <h3 class="card-title mt-3 py-2">Movie Title: {{title}}</h3>
+            <h5 class="card-text">Movie Genre: {{genre}}</h5>
+            <div class="div">
+                <input type="text" name="quan" id="quan" placeholder="Quantity" autocomplete="off">
+            </div>
+            <button class="btn btn-dark mt-3">Book</button>
+        </div>
+    </div>
+</form>
+{%endblock%}
